@@ -28,9 +28,15 @@
   }
 }
 
-.container {
+#root {
   height: 100vh;
   background: var(--background-color);
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 * {

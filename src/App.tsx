@@ -48,11 +48,11 @@ export default function App() {
           feature: "Take Control of Your Workflow",
           title: (
             <>
-              <span>Customized Alerts For</span> Mindful browsing
+              <span>Daily & Hourly</span> Summary Insights
             </>
           ),
           description:
-            "Personalize alert intervals to steer you away from distractions, keeping your focus intact.",
+            "Discover the patterns of your online journey with concise, meaningful summaries of your day and hour.",
         },
         {
           type: 0,
