@@ -33,58 +33,56 @@ export default function App() {
         {
           type: 0,
           image: (await import("./images/features/1.png")).default,
-          feature: "Improved Time Management",
+          feature: "Know Where Your Time Goes",
           title: (
             <>
-              <span>Insightful Analytics for</span> Self-Improvement
+              <span>The First Step Is</span> Realization
             </>
           ),
-          description:
-            "Unlock a deeper understanding of your web habits with analytics designed to foster self-improvement",
+          description: `You may not know how much time you are spending on Reddit when you mindlessly click over "for just a minute". They add up, and there are big context switching costs too.`,
         },
         {
           type: 1,
           image: (await import("./images/features/2.png")).default,
-          feature: "Take Control of Your Workflow",
+          feature: "Get Jolted Into Action",
           title: (
             <>
-              <span>Daily & Hourly</span> Summary Insights
+              <span>Daily & Hourly</span> Recaps
             </>
           ),
-          description:
-            "Discover the patterns of your online journey with concise, meaningful summaries of your day and hour.",
+          description: `Pie-charts tell you one thing, but these recaps will really jolt you into action :) Did you really spend that much time on that inane thing? Yes, you did!`,
         },
         {
           type: 0,
           image: (await import("./images/features/3.png")).default,
-          feature: "Filter What's Important",
+          feature: "Tag Sites You Want To Avoid",
           title: (
             <>
-              Adaptive<span> Website Categorization</span>
+              Intelligent<span> Website Tagging</span>
             </>
           ),
           description:
-            "Effortlessly navigate the web with sites pre-categorized for productivity, with the flexibility to customize your list.",
+            "We use some AI magic to figure out which sites are likely to be productive, which sites are time sinks. You can also tell us.",
         },
         {
           type: 1,
           image: (await import("./images/features/4.png")).default,
-          feature: "Tailor To Your Goals",
+          feature: "Recenter, Rebalance",
           title: (
             <>
-              Customizable<span> Focus Modes</span>
+              Tailor It To <span> Your Needs</span>
             </>
           ),
           description:
-            "Shape your browsing with customizable focus modes on distracting sites for when its needed.",
+            "Focus is not all or none. Set meaningful limits for each of your usual distractors.",
         },
         {
           type: 0,
           image: (await import("./images/features/5.png")).default,
-          feature: "Overcome Procrastination",
+          feature: "Recenter is Proactive, not Reactive",
           title: (
             <>
-              Proactive<span> Guidance</span>
+              Helps You Before You <span>Wander & Meander</span>
             </>
           ),
           description:
@@ -100,19 +98,19 @@ export default function App() {
             </>
           ),
           description:
-            "Transform productivity into a rewarding game with badges and achievements for your focus milestones.",
+            "Transform your journey back to balance and focus into a game. Badges to help acknowledge your daily and weekly wins.",
         },
         {
           type: 0,
           image: (await import("./images/features/7.png")).default,
-          feature: "Setup Once, Focus Without Interruptions",
+          feature: "Tons of Tweaks",
           title: (
             <>
-              <span>Simplicity and</span> Ease of Use
+              <span>Simple Outside, </span> Sophisticated Inside
             </>
           ),
           description:
-            "Effortlessly integrate Recenter with a simple setup, making enhanced focus just a few clicks away",
+            "Tons of tweaks to make this work the way you want it to. Want some feature? Tell us!",
         },
       ]);
     }

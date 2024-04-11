@@ -1,6 +1,5 @@
 import "./MainSection.scss";
-import main_image from "../images/main_section_image.png"
-
+import main_image from "../images/main_section_image.png";
 
 export default function MainSection() {
   return (
@@ -8,14 +7,30 @@ export default function MainSection() {
       <div className="main_section__header">
         <div className="main_section__header__title">
           <p>Mindful Browsing Begins Here,</p>
-          <p id="blue">Introducing Recenter.</p>
+          <p id="blue">Recenter</p>
         </div>
         <div className="main_section__header__subtitle">
-          <p>The browser extension that reshapes your browsing habits.</p>
+          <p>
+            Recenter is a browser extension that helps you reshape your browsing
+            habits.
+          </p>
         </div>
         <div className="main_section__header__button">
           <div className="main_section__header__button__container">
-            <button>Get it from Chrome WebStore</button>
+            <div>
+              <a href="#features">Get it from Chrome WebStore</a>
+            </div>
+          </div>
+          <div className="main_section__header__button__container">
+            <div>
+              <a
+                href="https://github.com/CominiLearning/recenter"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Get it from Github Repo
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -15,7 +15,7 @@ export default function WebsiteList() {
     const finalPosition = -width / 2 - 8;
     const controls = animate(xTranslation, [0, finalPosition], {
       ease: "linear",
-      duration: 25,
+      duration: 15,
       repeat: Infinity,
       repeatType: "loop",
       repeatDelay: 0,
@@ -42,7 +42,7 @@ export default function WebsiteList() {
   return (
     <div className="website_list">
       <div className="website_list__title">
-        Works with all your favorite websites
+        Works with all your favorite time sinks
       </div>
       <motion.div
         className="website_list__items"

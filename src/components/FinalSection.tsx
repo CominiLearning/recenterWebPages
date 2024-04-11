@@ -11,7 +11,20 @@ export default function FinalSection() {
       </div>
       <div className="final_section__button">
         <div className="final_section__button__container">
-          <button>Get it from Chrome WebStore</button>
+          <div>
+            <a href="#features">Get it from Chrome WebStore</a>
+          </div>
+        </div>
+        <div className="final_section__button__container">
+          <div>
+            <a
+              href="https://github.com/CominiLearning/recenter"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Get it from Github Repo
+            </a>
+          </div>
         </div>
       </div>
     </div>
