@@ -12,7 +12,13 @@ export default function FinalSection() {
       <div className="final_section__button">
         <div className="final_section__button__container">
           <div>
-            <a href="#features">Get it from Chrome WebStore</a>
+            <a
+              href="https://chromewebstore.google.com/detail/recenter/jebgcaelmhfoelfjcaiiccamkembanoo"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Get it from Chrome WebStore
+            </a>
           </div>
         </div>
         <div className="final_section__button__container">

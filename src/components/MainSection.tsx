@@ -18,7 +18,13 @@ export default function MainSection() {
         <div className="main_section__header__button">
           <div className="main_section__header__button__container">
             <div>
-              <a href="#features">Get it from Chrome WebStore</a>
+              <a
+                href="https://chromewebstore.google.com/detail/recenter/jebgcaelmhfoelfjcaiiccamkembanoo"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Get it from Chrome WebStore
+              </a>
             </div>
           </div>
           <div className="main_section__header__button__container">

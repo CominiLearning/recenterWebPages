@@ -20,7 +20,7 @@ export default function Navbar() {
           <a href="#features" className="navbar__right__items__item" id="item">
             Features
           </a>
-          <a href="https://github.com/CominiLearning/recenter" rel="noreferrer" target="_blank" className="navbar__right__items__item" id="item">
+          <a href="https://chromewebstore.google.com/detail/recenter/jebgcaelmhfoelfjcaiiccamkembanoo" rel="noreferrer" target="_blank" className="navbar__right__items__item" id="item">
             Download
           </a>
           <div className="navbar__right__items__item" id="icon">
