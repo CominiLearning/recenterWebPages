@@ -6,7 +6,7 @@ export default function MainSection() {
     <div className="main_section">
       <div className="main_section__header">
         <div className="main_section__header__title">
-          <p>Mindful Browsing Begins Here,</p>
+          <p>Mindful Browsing Begins Here</p>
           <p id="blue">Recenter</p>
         </div>
         <div className="main_section__header__subtitle">
