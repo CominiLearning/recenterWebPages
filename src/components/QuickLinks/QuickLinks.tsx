@@ -21,7 +21,7 @@ export default function QuickLinks() {
     },
     {
       name: "Frequency Asked",
-      link: "/docs/faq",
+      link: "/docs/faqs",
       icon: require("../../images/documentation/icons/help.svg").default,
     },
   ];
