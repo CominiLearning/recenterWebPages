@@ -7,8 +7,8 @@ export default function GettingStarted() {
   useEffect(() => {
     async function fetchImages() {
       const images = [];
-      images.push((await import("../images/getting_started_1.png")).default);
-      images.push((await import("../images/getting_started_2.png")).default);
+      images.push((await import("../../images/getting_started_1.png")).default);
+      images.push((await import("../../images/getting_started_2.png")).default);
       setImages(images);
     }
     fetchImages();

@@ -1,5 +1,5 @@
 import "./MainSection.scss";
-import main_image from "../images/main_section_image.png";
+import main_image from "../../images/main_section_image.png";
 
 export default function MainSection() {
   return (

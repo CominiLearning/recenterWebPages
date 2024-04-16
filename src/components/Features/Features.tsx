@@ -1,12 +1,5 @@
+import { FeatureItem } from "../../types/FeatureItem";
 import "./Features.scss";
-
-interface FeaturesProps {
-  type: number;
-  image: string;
-  feature: string;
-  title: JSX.Element | string;
-  description: string;
-}
 
 export default function Features({
   type,
@@ -14,7 +7,7 @@ export default function Features({
   feature,
   title,
   description,
-}: FeaturesProps) {
+}: FeatureItem) {
   return (
     <div className="features_container" id={type === 0 ? "" : "rev"}>
       <div className="features_container__left">

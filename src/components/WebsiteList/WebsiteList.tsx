@@ -31,7 +31,7 @@ export default function WebsiteList() {
     async function fetchWebsites() {
       const websites: string[] = [];
       for (let i = 1; i <= 10; i++) {
-        const icon = await import(`../images/logos/${i}.png`);
+        const icon = await import(`../../images/logos/${i}.png`);
         websites.push(icon.default);
       }
       setWebsites(websites);
