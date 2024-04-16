@@ -103,24 +103,26 @@ export default function App() {
 
   return (
     <div className="app_container">
-      <div className="app_container__blue_line"></div>
-      <Navbar />
-      <MainSection></MainSection>
-      <WebsiteList></WebsiteList>
-      <GettingStarted></GettingStarted>
-      {features.map((feature, index) => {
-        return (
-          <Features
-            key={index}
-            type={feature.type}
-            image={feature.image}
-            feature={feature.feature}
-            title={feature.title}
-            description={feature.description}
-          ></Features>
-        );
-      })}
-      <FinalSection></FinalSection>
+      <div className="app_container__content">
+        <div className="app_container__content__blue_line"></div>
+        <Navbar />
+        <MainSection></MainSection>
+        <WebsiteList></WebsiteList>
+        <GettingStarted></GettingStarted>
+        {features.map((feature, index) => {
+          return (
+            <Features
+              key={index}
+              type={feature.type}
+              image={feature.image}
+              feature={feature.feature}
+              title={feature.title}
+              description={feature.description}
+            ></Features>
+          );
+        })}
+        <FinalSection></FinalSection>
+      </div>
       <Footer></Footer>
     </div>
   );
