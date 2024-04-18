@@ -1,0 +1,36 @@
+.terms_page {
+    font-size: 18px;
+    margin: 80px;
+    margin-bottom: 0;
+    color: #4a4a4a;
+    line-height: 1.8;
+    
+    * {
+      font-size: 18px;
+      color: #4a4a4a;
+      line-height: 1.8;
+    }
+  
+    & strong {
+      font-weight: 700;
+      margin-bottom: 30px;
+      padding-right: 0.25em;
+      font-size: 18px;
+      color: black;
+    }
+  
+    & div {
+      margin: 10px 0;
+    }
+    & ul, ol {
+      padding-left: 40px;
+      margin-bottom: 10px;
+      & li {
+        margin: 10px 0;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  

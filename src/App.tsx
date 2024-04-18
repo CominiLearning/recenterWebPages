@@ -7,6 +7,8 @@ import Footer from "./components/Footer/Footer";
 import Essentials from "./pages/Essentials/Essentials";
 import AlertInformation from "./pages/AlertInformation/AlertInformation";
 import FAQ from "./pages/FAQ/FAQ";
+import Privacy from "./pages/Privacy/Privacy";
+import Terms from "./pages/Terms/Terms";
 
 export default function App() {
   return (
@@ -19,6 +21,8 @@ export default function App() {
         <Route path="/docs/essentials" element={<Essentials></Essentials>}></Route>
         <Route path="/docs/alerts" element={<AlertInformation></AlertInformation>}></Route>
         <Route path="/docs/faqs" element={<FAQ></FAQ>}></Route>
+        <Route path="/privacy" element={<Privacy></Privacy>}></Route>
+        <Route path="/terms" element={<Terms></Terms>}></Route>
       </Routes>
       <Footer></Footer>
     </div>

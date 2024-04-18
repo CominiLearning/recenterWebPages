@@ -5,7 +5,7 @@ export default function WelcomeSection() {
     <div className="welcome_section">
       <div className="welcome_section__main_text">
         <div className="welcome_section__main_text__blue">
-          Welcome to Recenter,
+          Welcome to Recenter
         </div>
         <div className="welcome_section__main_text__black">
           What Happens Next?

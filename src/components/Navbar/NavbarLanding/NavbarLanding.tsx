@@ -8,6 +8,51 @@ import useToggle from "../../../hooks/useToggle";
 export default function NavbarLanding() {
   const [menuExpanded, setMenuExpanded] = useToggle(false);
 
+  const links = [
+    {
+      name: "Home",
+      href: "/",
+      type: "link",
+      isExpanded: true,
+      isExternal: false,
+    },
+    {
+      name: "Features",
+      href: "#features",
+      type: "anchor",
+      isExpanded: false,
+      isExternal: false,
+    },
+    {
+      name: "Documentation",
+      href: "/docs",
+      type: "link",
+      isExpanded: false,
+      isExternal: false,
+    },
+    {
+      name: "Download",
+      href: "https://chromewebstore.google.com/detail/recenter/jebgcaelmhfoelfjcaiiccamkembanoo",
+      type: "anchor",
+      isExpanded: false,
+      isExternal: true,
+    },
+    {
+      name: "Privacy",
+      href: "/privacy",
+      type: "link",
+      isExpanded: false,
+      isExternal: false,
+    },
+    {
+      name: "T&C",
+      href: "/terms",
+      type: "link",
+      isExpanded: false,
+      isExternal: false,
+    },
+  ];
+
   return (
     <div className="navbar_landing">
       <div className="navbar_landing__left">
@@ -18,21 +63,35 @@ export default function NavbarLanding() {
       </div>
       <div className="navbar_landing__right">
         <div className="navbar_landing__right__items">
-          <a href="#features" className="navbar_landing__right__items__item" id="item">
-            Features
-          </a>
-          <Link to="/docs" className="navbar_landing__right__items__item" id="item">
-            Help & Documentation
-          </Link>
-          <a
-            href="https://chromewebstore.google.com/detail/recenter/jebgcaelmhfoelfjcaiiccamkembanoo"
-            rel="noreferrer"
-            target="_blank"
-            className="navbar_landing__right__items__item"
-            id="item"
-          >
-            Download
-          </a>
+          {links.map((link) => {
+            if(link.isExpanded) {
+              return "";
+            }
+            if(link.type === "link") {
+              return (
+                <Link
+                  to={link.href}
+                  className="navbar_landing__right__items__item"
+                  key={link.name}
+                  id="item"
+                >
+                  {link.name}
+                </Link>
+              );
+            }
+            return (
+              <a
+                href={link.href}
+                target={link.isExternal ? "_blank" : ""}
+                rel={link.isExternal ? "noreferrer" : ""}
+                className="navbar_landing__right__items__item"
+                key={link.name}
+                id="item"
+              >
+                {link.name}
+              </a>
+            );
+          })}
           <div className="navbar_landing__right__items__item" id="icon">
             <FaBars onClick={setMenuExpanded}></FaBars>
           </div>
@@ -46,23 +105,30 @@ export default function NavbarLanding() {
           </div>
         </div>
         <div className="navbar_landing__menu_expanded__items">
-          <a href="#home" className="navbar_landing__menu_expanded__items__item">
-            Home
-          </a>
-          <a href="#features" className="navbar_landing__menu_expanded__items__item">
-            Features
-          </a>
-          <Link to="/docs" className="navbar_landing__menu_expanded__items__item">
-            Help & Documentation
-          </Link>
-          <a
-            href="https://github.com/CominiLearning/recenter"
-            target="_blank"
-            rel="noreferrer"
-            className="navbar_landing__menu_expanded__items__item"
-          >
-            Download
-          </a>
+          {links.map((link) => {
+            if(link.type === "link") {
+              return (
+                <Link
+                  to={link.href}
+                  className="navbar_landing__menu_expanded__items__item"
+                  key={link.name}
+                >
+                  {link.name}
+                </Link>
+              );
+            }
+            return (
+              <a
+                href={link.href}
+                target={link.isExternal ? "_blank" : ""}
+                rel={link.isExternal ? "noreferrer" : ""}
+                className="navbar_landing__menu_expanded__items__item"
+                key={link.name}
+              >
+                {link.name}
+              </a>
+            );
+          })}
         </div>
         <div className="navbar_landing__menu_expanded__line"></div>
       </div>

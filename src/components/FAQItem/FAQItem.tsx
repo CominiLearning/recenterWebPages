@@ -13,8 +13,8 @@ export default function FAQItem({ question, answer }: FAQItemProps) {
     setIsOpen((prev) => !prev);
   }
   return (
-    <div className="faq_item">
-      <div className="faq_item__question" onClick={toggleOpen}>
+    <div className="faq_item"  onClick={toggleOpen}>
+      <div className="faq_item__question">
         {question} <FaAngleDown></FaAngleDown>
       </div>
       <div className={"faq_item__answer " + (isOpen ? "open" : "")}>
